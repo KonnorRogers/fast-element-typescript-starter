@@ -1,1 +1,1 @@
-export * from "./nameTag/nameTag"
+export * from "./my-counter/my-counter"
