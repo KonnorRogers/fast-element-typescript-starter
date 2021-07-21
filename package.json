@@ -2,10 +2,13 @@
   "name": "playing-with-fast",
   "version": "1.0.0",
   "source": "src/index.ts",
-  "exports": "./dist/index.modern.js",
   "main": "./dist/index.js",
   "module": "./dist/index.module.js",
-  "unpkg": "./dist/foo.umd.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.modern.js"
+  }
   "type": "module",
   "license": "MIT",
   "files": [
@@ -18,8 +21,8 @@
     "test:watch": "web-test-runner --watch",
     "start": "tsc -p tsconfig-dev.json && web-dev-server",
     "start:watch": "web-dev-server --watch",
-    "build": "rm -rf dist && tsc",
-    "build:watch": "yarn build --watch",
+    "build": "rm -rf dist && microbundle",
+    "build:watch": "yarn build watch",
     "changelog": "standard-changelog",
     "deploy": "standard-version",
     "deploy:beta": "yarn deploy --prerelease beta && yarn push",
