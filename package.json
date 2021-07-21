@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.modern.js"
-  }
+  },
   "type": "module",
   "license": "MIT",
   "files": [

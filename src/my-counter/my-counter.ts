@@ -1,7 +1,7 @@
-import { FASTElement, html, attr, customElement } from '@microsoft/fast-element';
-import type { ViewTemplate } from '@microsoft/fast-element';
+import { FASTElement, html, attr, customElement } from '@microsoft/fast-element'
+import type { ViewTemplate } from '@microsoft/fast-element'
 
-import { styles } from "./styles"
+import { styles } from './styles'
 
 const template: ViewTemplate = html<MyCounter>`
   <div class="counter__current">
@@ -22,12 +22,12 @@ const template: ViewTemplate = html<MyCounter>`
 `
 
 @customElement({
-  name: "my-counter",
+  name: 'my-counter',
   template,
   styles
 })
 export class MyCounter extends FASTElement {
-  @attr count: number = 0;
+  @attr count: number = 0
 
   increment (): void {
     this.count += 1
@@ -44,6 +44,6 @@ export class MyCounter extends FASTElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-counter": MyCounter,
+    'my-counter': MyCounter
   }
 }
