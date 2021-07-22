@@ -8,15 +8,15 @@ const template: ViewTemplate = html<MyCounter>`
     Count: ${x => x.count}
   </div>
 
-  <button @click="${x => x.increment()}" class="counter__increment">
-    Add
+  <button @click="${x => x.increment()}" title="increment">
+    Increment
   </button>
 
-  <button @click="${x => x.decrement()}" class="counter__decrement">
-    Subtract
+  <button @click="${x => x.decrement()}" title="decrement">
+    Decrement
   </button>
 
-  <button @click="${x => x.reset()}" class="counter__reset">
+  <button @click="${x => x.reset()}" title="reset">
     Reset
   </button>
 `

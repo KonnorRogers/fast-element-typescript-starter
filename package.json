@@ -1,6 +1,6 @@
 {
-  "name": "playing-with-fast",
-  "version": "1.0.0",
+  "name": "fast-element-typescript-starter",
+  "version": "0.0.1",
   "source": "src/index.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.module.js",
