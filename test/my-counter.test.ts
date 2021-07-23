@@ -11,6 +11,7 @@ describe('MyCounter', () => {
     const button = el.shadowRoot?.querySelector('button[title="increment"]') as HTMLButtonElement
     button.click()
     assert.equal(el.count, 1)
+    await assert.isAccessible(el)
   })
 
   it('decreases the count on button click', async () => {
