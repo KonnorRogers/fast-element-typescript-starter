@@ -5,7 +5,8 @@ export default ({
   files: 'test/**/*.test.ts',
   browsers: [
     playwrightLauncher({ product: 'chromium' }),
-    playwrightLauncher({ product: 'webkit' })
+    playwrightLauncher({ product: 'webkit' }),
+    playwrightLauncher({ product: 'firefox' })
   ],
   nodeResolve: true,
   rootDir: '.',
