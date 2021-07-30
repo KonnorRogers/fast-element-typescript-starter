@@ -21,8 +21,13 @@ Click the `clone from template` button on Github.
 Then, in your new repo do the following:
 
 ```bash
+# Yarn
 yarn install
 yarn start
+
+# npm
+npm install
+npm start
 ```
 
 Navigate to `localhost:8000` and find the magic of the counter
