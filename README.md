@@ -21,8 +21,8 @@ Click the `clone from template` button on Github.
 Then, in your new repo do the following:
 
 ```bash
-yarn install
-yarn start
+npm install
+npm run start
 ```
 
 Navigate to `localhost:8000` and find the magic of the counter
@@ -31,3 +31,7 @@ component.
 ## Moving forward
 
 Check out the `package.json` for all possible scripts.
+
+## But what about yarn?!
+
+If you want yarn, then fork this and use yarn 🤷
