@@ -10,11 +10,11 @@
     "lib": ["es6", "dom", "dom.iterable"],
     "module": "ESNext",
     "moduleResolution": "node",
-    "noEmit": false,
+    "emitDeclarationOnly": true,
     "outDir": "./dist",
     "sourceMap": true,
     "strict": true,
-    "target": "ESNext",
+    "target": "es2017",
     "skipLibCheck": true,
 
     "forceConsistentCasingInFileNames": true,
